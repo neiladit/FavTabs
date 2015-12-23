@@ -1,9 +1,6 @@
 
 
 
-alert("here");
-console.log("Hello, world!");
-
 function openall(){
     
 	var fb1 = true;
