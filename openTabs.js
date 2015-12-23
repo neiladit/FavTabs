@@ -8,7 +8,10 @@ function openall(){
     
     chrome.windows.getAll({"populate" : true},checkTabs);
     
-    function checkTabs(tab_array){
+
+}
+
+function checkTabs(tab_array){
         
         for(var i=0;i<tab_array.length;i++)
 	{
@@ -56,8 +59,6 @@ function openall(){
             alert('Please allow popups for this site');
         }
     }
-    }
-
 }
 
 chrome.browserAction.onClicked.addListener(openall);
